@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>javascript</title>
+	</head>
+	<body>
+		<div id="text1">hello javascript</div>
+			<input id="input1" type="number" name="" class="form-control">
+			<input id="input2" type="number" name="" class="form-control">
+			<button onclick="divide();" class="btn btn-warning">Divide</button>
+			<button onclick="multiply();" class="btn btn-success">Multiply</button>
+			<button onclick="sum();" class="btn btn-info">Add</button>
+			<button onclick="subtraction();" class="btn btn-danger">Subtract</button>
+	
+
+
+
+		<script type="text/javascript">
+			function divide(){
+				var x=parseInt(document.getElementById('input1').value);
+				var y=parseInt(document.getElementById('input2').value);
+				document.getElementById('text1').innerHTML=x/y;
+			}
+
+			function multiply(){
+				var x=parseInt(document.getElementById('input1').value);
+				var y=parseInt(document.getElementById('input2').value);
+				document.getElementById('text1').innerHTML=x*y;
+			}
+
+			function sum(){
+				var x=parseInt(document.getElementById('input1').value);
+				var y=parseInt(document.getElementById('input2').value);
+				document.getElementById('text1').innerHTML=x+y;
+			}
+
+			function subtraction(){
+				var x=parseInt(document.getElementById('input1').value);
+				var y=parseInt(document.getElementById('input2').value);
+				document.getElementById('text1').innerHTML=x-y;
+			}
+			
+		</script>
+
+	</body>
+</html>
