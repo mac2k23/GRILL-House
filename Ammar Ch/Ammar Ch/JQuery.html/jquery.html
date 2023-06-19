@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQuery</title>
+
+  </head>
+  <body>
+    <h1 id="text">JQuery</h1>
+    <button id="btn1">Change Text</button>
+
+    <img id="img1" src="images/burger1.png">
+
+    <h1>
+    	Blink Your 
+    	<span id="blink">Text</span>
+    </h1>
+   <div id="fun">
+   	 <ul>
+    	<li>HTML</li>
+    	<li>Bootsrtap</li>
+    	<li>CSS</li>
+    	<li>JAVA Script</li>
+    </ul>
+   </div>
+   <button id="ad">Add list</button>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		
+		$("#btn1").click(function () {
+			$("#text").fadeOut(1000);
+			$("#text").text('Hello New Text');
+			$("#text").fadeIn(5000);
+		})
+
+		$("#img1").click(function () {
+			$(this).attr("src","images/burger2.png");
+		})
+		
+
+		function blink() {
+		    $('#blink').fadeOut(500);
+		    $('#blink').fadeIn(500);
+		} 
+		setInterval(blink, 1000);
+
+			$("#ad").click(function (){
+				$("#fun").append("<li>JQuery</li>")
+		})
+	</script>
+
+  </body>
+</html>
